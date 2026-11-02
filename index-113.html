@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lebap Techno Hub — аксессуары для телефона в Туркменабате</title>
+<meta name="description" content="Селфи-штативы, наушники и переходники под заказ в Туркменабате. Sargyt boýunça aksesuarlar. Telegram: @Yusupmur">
+<meta name="theme-color" content="#0b1329">
+<meta property="og:title" content="Lebap Techno Hub — Туркменабат">
+<meta property="og:description" content="Аксессуары для телефона под заказ. Заказ через Telegram.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%B1%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0b1329; --bg2:#121c3a; --panel:#16213f; --line:rgba(255,255,255,.12);
+  --text:#f3f5fa; --muted:#a3adc6; --accent:#ff9a3c; --accent-dark:#c96a10;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.55;font-size:16px;
+  padding:env(safe-area-inset-top,0px) 0 calc(40px + env(safe-area-inset-bottom,0px));
+}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(11,19,41,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{font-weight:800;font-size:17px;letter-spacing:-.01em}
+.logo b{color:var(--accent)}
+header nav a{font-size:14px;color:var(--muted);text-decoration:none;margin-left:16px}
+header nav a:hover{color:var(--text)}
+
+/* hero */
+.hero{padding:44px 0 36px}
+.hero h1{font-size:clamp(32px,9vw,46px);line-height:1.05;letter-spacing:-.035em;font-weight:800}
+.hero .tk{display:block;margin-top:12px;font-size:17px;font-weight:500;color:var(--accent);letter-spacing:0}
+.hero p{margin-top:18px;color:var(--muted);max-width:46ch}
+.hero p.tk2{margin-top:6px;font-size:14px}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;text-align:center;
+  background:var(--accent);color:#1a1000;font-weight:700;font-size:17px;text-decoration:none;
+  padding:15px 22px;border-radius:12px;border:0;cursor:pointer;width:100%;
+  transition:transform .15s,background .15s;
+}
+.btn:hover{background:#ffab5c}
+.btn:active{transform:scale(.97)}
+.hero .btn{margin-top:26px}
+.hint{margin-top:10px;font-size:13px;color:var(--muted);text-align:center}
+
+/* sections */
+section{padding:30px 0}
+h2{font-size:23px;letter-spacing:-.02em;line-height:1.2}
+h2 small{display:block;margin-top:3px;font-size:14px;font-weight:500;color:var(--muted);letter-spacing:0}
+.lead{margin:12px 0 22px;color:var(--muted);font-size:15px}
+
+/* catalog */
+.grid{display:grid;gap:14px}
+@media(min-width:620px){.grid{grid-template-columns:1fr 1fr}.wrap{max-width:860px}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.tile{
+  background:linear-gradient(160deg,var(--bg2),#1b2a54);
+  padding:22px 18px 16px;border-bottom:1px solid var(--line);
+  display:flex;flex-direction:column;justify-content:flex-end;min-height:116px;
+}
+.tile .code{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:1;color:#fff}
+.tile .cat{margin-top:8px;font-size:13px;color:var(--accent);font-weight:600}
+.body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.body h3{font-size:17px;line-height:1.3}
+.body p{font-size:14px;color:var(--muted)}
+.body p.tk{font-size:13px;opacity:.85}
+.price{margin-top:auto;padding-top:6px;font-weight:700;font-size:18px}
+.price.ask{font-size:14px;font-weight:600;color:var(--muted)}
+.card .btn{font-size:15px;padding:12px 16px}
+
+/* steps */
+.steps{list-style:none;counter-reset:s;display:grid;gap:12px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start;font-size:15px}
+.steps li::before{
+  content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--accent);color:#1a1000;
+  font-weight:800;display:grid;place-items:center;
+}
+.steps span{display:block;font-size:13px;color:var(--muted)}
+
+/* faq */
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:10px}
+summary{cursor:pointer;padding:15px 16px;font-weight:600;font-size:15px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-size:20px;line-height:1}
+details[open] summary::after{content:"−"}
+details div{padding:0 16px 16px;font-size:14px;color:var(--muted)}
+details div span{display:block;margin-top:6px;opacity:.85}
+
+/* contact */
+.contact{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center}
+.contact p{margin-bottom:16px;color:var(--muted)}
+footer{margin-top:34px;padding-top:20px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Lebap <b>Techno</b> Hub</div>
+    <nav><a href="#catalog">Каталог</a><a href="#order">Заказ</a><a href="#contacts">Контакты</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h1>Аксессуары для телефона в Туркменабате<span class="tk">Telefon aksesuarlary Türkmenabatda</span></h1>
+    <p>Селфи-штативы, наушники и переходники. Работаем под заказ: пишете в Telegram, мы называем цену и срок.</p>
+    <p class="tk2">Sargyt boýunça işleýäris: Telegram-a ýazyň, bahasyny we möhletini aýdarys.</p>
+    <a class="btn" href="https://t.me/Yusupmur" target="_blank" rel="noopener">Написать в Telegram / Telegram-a ýazmak</a>
+    <div class="hint">@Yusupmur</div>
+  </div>
+
+  <section id="catalog">
+    <h2>Каталог <small>Katalog</small></h2>
+    <p class="lead">Все товары под заказ. Цену и срок подтверждаем в чате перед оплатой. / Bahasy we möhleti sargytdan öň çatda tassyklanýar.</p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="order">
+    <h2>Как заказать <small>Nädip sargyt etmeli</small></h2>
+    <p class="lead"></p>
+    <ol class="steps">
+      <li><div>Выберите товар и нажмите «Заказать в Telegram»<span>Harydy saýlaň we «Telegram-da sargyt et» düwmesine basyň</span></div></li>
+      <li><div>Мы подтверждаем цену и срок<span>Biz bahany we möhleti tassyklaýarys</span></div></li>
+      <li><div>Договариваемся об оплате и получении в Туркменабате<span>Töleg we alyş barada Türkmenabatda ylalaşýarys</span></div></li>
+    </ol>
+  </section>
+
+  <section id="faq">
+    <h2>Частые вопросы <small>Ýygy-ýygydan soraglar</small></h2>
+    <p class="lead"></p>
+    <details>
+      <summary>Почему «под заказ»?</summary>
+      <div>Мы не держим склад, а заказываем товар после вашего подтверждения. Так цена честнее, а срок мы называем заранее.<span>Biz ammar saklamaýarys, harydy siziň tassyklamaňyzdan soň getirýäris.</span></div>
+    </details>
+    <details>
+      <summary>Есть ли доставка?</summary>
+      <div>Передача и доставка по Туркменабату обсуждаются при заказе.<span>Eltip bermek Türkmenabat boýunça sargyt wagty ylalaşylýar.</span></div>
+    </details>
+    <details>
+      <summary>Что если товар не подошёл или не работает?</summary>
+      <div>Напишите нам сразу в Telegram: решим вопрос индивидуально.<span>Derrew Telegram-da ýazyň, meseläni aýratyn çözýäris.</span></div>
+    </details>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакты <small>Habarlaşmak üçin</small></h2>
+    <p class="lead"></p>
+    <div class="contact">
+      <p>Пишите в любое время, отвечаем в течение дня.<br>Islendik wagt ýazyň.</p>
+      <a class="btn" href="https://t.me/Yusupmur" target="_blank" rel="noopener">Telegram: @Yusupmur</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Lebap Techno Hub · Türkmenabat, Turkmenistan</footer>
+</main>
+
+<script>
+/* ===== ТОВАРЫ: меняйте цены здесь =====
+   price: "120 манат"  — вписать цену
+   price: null          — покажет «Цена по запросу» */
+var PRODUCTS = [
+  { code:"P515", name:"Селфи-штатив P515, 1,8 м", cat:"Селфи-штатив",
+    ru:"Алюминиевый штатив-монопод до 1,8 м, поворотная головка 360°, складывается. Наличие пульта уточняйте.",
+    tk:"Alýuminiý ştatiw, 1,8 m çenli, 360° aýlanýar, ýygnalýar.", price:null },
+  { code:"N08", name:"Селфи-штатив N08 Bluetooth", cat:"Селфи-штатив",
+    ru:"Компактный штатив-монопод с Bluetooth для селфи и видео.",
+    tk:"Selfi we wideo üçin Bluetooth-ly ykjam ştatiw.", price:null },
+  { code:"R1S", name:"Селфи-палка R1S", cat:"Селфи-палка",
+    ru:"Телескопическая селфи-палка с держателем для телефона.",
+    tk:"Telefon üçin tutawajy bolan uzalýan selfi taýagy.", price:null },
+  { code:"OTG", name:"Переходник OTG USB — Type-C 3.0", cat:"Переходник",
+    ru:"Подключает флешку, мышь или клавиатуру к телефону с разъёмом Type-C.",
+    tk:"Type-C telefona fleşka, syçan ýa-da klawiatura birikdirýär.", price:null },
+  { code:"MH-06", name:"Наушники MOXOM MH-06 Metal Bass", cat:"Наушники",
+    ru:"Проводные наушники-вкладыши в металлическом корпусе.",
+    tk:"Metal korpusly simli gulaklyklar.", price:null }
+];
+
+var TG = "https://t.me/Yusupmur?text=";
+var grid = document.getElementById("grid");
+
+PRODUCTS.forEach(function (p) {
+  var card = document.createElement("article");
+  card.className = "card";
+
+  var tile = document.createElement("div");
+  tile.className = "tile";
+  tile.innerHTML = '<div class="code"></div><div class="cat"></div>';
+  tile.querySelector(".code").textContent = p.code;
+  tile.querySelector(".cat").textContent = p.cat;
+
+  var body = document.createElement("div");
+  body.className = "body";
+
+  var h = document.createElement("h3");
+  h.textContent = p.name;
+
+  var ru = document.createElement("p");
+  ru.textContent = p.ru;
+
+  var tk = document.createElement("p");
+  tk.className = "tk";
+  tk.textContent = p.tk;
+
+  var price = document.createElement("div");
+  price.className = "price" + (p.price ? "" : " ask");
+  price.textContent = p.price ? p.price : "Цена по запросу / Bahasy soralanda";
+
+  var btn = document.createElement("a");
+  btn.className = "btn";
+  btn.target = "_blank";
+  btn.rel = "noopener";
+  btn.href = TG + encodeURIComponent("Здравствуйте! Интересует " + p.name + ". Какая цена и срок?");
+  btn.textContent = "Заказать в Telegram / Sargyt et";
+
+  body.appendChild(h);
+  body.appendChild(ru);
+  body.appendChild(tk);
+  body.appendChild(price);
+  body.appendChild(btn);
+  card.appendChild(tile);
+  card.appendChild(body);
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>
